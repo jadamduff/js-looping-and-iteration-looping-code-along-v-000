@@ -12,7 +12,7 @@ function tailsNeverFails() {
   let tailsCounter = 0;
   while (flip === 'Tails') {
     let flipper = Math.random();
-    if (flipper <= 0.5) {
+    if (flipper < 0.5) {
       flip = 'Heads';
     } else {
       tailsCounter++;
