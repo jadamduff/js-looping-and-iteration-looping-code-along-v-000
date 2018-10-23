@@ -8,12 +8,12 @@ function printBadges(array) {
 }
 
 function tailsNeverFails() {
-  let flip = 'tails';
+  let flip = 'Tails';
   let tailsCounter = 0;
-  while (flip === 'tails') {
+  while (flip === 'Tails') {
     let flipper = Math.random();
-    if (flipper >= 0.5) {
-      flip = 'heads';
+    if (flipper <= 0.5) {
+      flip = 'Heads';
     } else {
       tailsCounter++;
     }
