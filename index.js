@@ -6,3 +6,17 @@ function printBadges(array) {
   }
   return array;
 }
+
+function tailsNeverFails() {
+  let flip = 'tails';
+  let tailsCounter = 0;
+  while (flip === 'tails') {
+    let flipper = Math.random();
+    if (flipper >= 0.5) {
+      flip = 'heads';
+    } else {
+      tailsCounter++;
+    }
+  }
+  return tailsCounter;
+}
