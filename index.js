@@ -18,5 +18,5 @@ function tailsNeverFails() {
       tailsCounter++;
     }
   }
-  return tailsCounter;
+  return 'You got ' + tailsCounter + ' tails in a row!';
 }
